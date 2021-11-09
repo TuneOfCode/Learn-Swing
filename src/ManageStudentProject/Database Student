@@ -1,0 +1,15 @@
+CREATE DATABASE testdb character set UTF8 collate utf8_vietnamese_ci;
+USE testdb;
+CREATE TABLE student (
+	id varchar(100) PRIMARY KEY,
+	name varchar(250) not null,
+	phone varchar(15) not null,
+	email varchar(250) not null,
+	birthday varchar(100) not null,
+	gender varchar(10) not null,
+	type_blood varchar(10) not null,
+	income double not null,
+	start_time int not null,
+	end_time not null,
+	tax double null
+)
