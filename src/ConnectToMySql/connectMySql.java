@@ -13,7 +13,7 @@ public class connectMySql {
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 			Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
 			Statement statement =  connection.createStatement();
-			ResultSet resultSet =  statement.executeQuery("select * from student");
+			ResultSet resultSet =  statement.executeQuery("SELECT * FROM student");
 			while (resultSet.next()) {
 				 System.out.println(
 	                		resultSet.getString(1) 
